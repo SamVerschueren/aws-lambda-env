@@ -1,0 +1,31 @@
+{
+  "name": "aws-lambda-env",
+  "version": "1.0.0",
+  "description": "Determines the environment the lambda function is running in.",
+  "main": "index.js",
+  "dependencies": {
+    "ava": "^0.1.0"
+  },
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "ava": "^0.1.0"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamVerschueren/aws-lambda-env.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "environment"
+  ],
+  "author": "Sam Verschueren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SamVerschueren/aws-lambda-env/issues"
+  },
+  "homepage": "https://github.com/SamVerschueren/aws-lambda-env#readme"
+}

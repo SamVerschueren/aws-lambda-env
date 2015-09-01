@@ -13,7 +13,7 @@
  * @param  {string} delimiter   The delimiter to split the function on, _ by default.
  * @return {string}             The environment the function is running in.
  */
-exports.env = function(delimiter) {
+module.exports = function(delimiter) {
     // Split the function name by the delimiter
     var name = process.env.AWS_LAMBDA_FUNCTION_NAME.split(delimiter || '_');
 
