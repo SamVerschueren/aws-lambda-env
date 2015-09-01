@@ -1,5 +1,7 @@
 # aws-lambda-env
 
+[![Build Status](https://travis-ci.org/SamVerschueren/aws-lambda-env.svg?branch=master)](https://travis-ci.org/SamVerschueren/aws-lambda-env)
+
 > Determines the environment the lambda function is running in.
 
 ## Installation
