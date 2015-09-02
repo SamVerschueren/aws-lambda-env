@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-env",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Determines the environment the lambda function is running in.",
   "main": "index.js",
   "dependencies": {},
