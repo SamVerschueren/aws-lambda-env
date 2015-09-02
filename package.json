@@ -20,6 +20,9 @@
     "lambda",
     "environment"
   ],
+  "files": [
+      "index.js"
+  ],
   "author": "Sam Verschueren",
   "license": "MIT",
   "bugs": {
