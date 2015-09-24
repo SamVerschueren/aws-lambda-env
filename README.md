@@ -47,7 +47,7 @@ Extracts the environment at the beginning of the function name.
 
 Extracts the environment at the end of the function name.
 
-#### delimiter
+##### delimiter
 
 Type: `string`
 
