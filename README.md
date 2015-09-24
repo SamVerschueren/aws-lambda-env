@@ -35,7 +35,17 @@ var env = require('aws-lambda-env')(':') || 'production';
 
 ## API
 
-### plugin([delimiter])
+### env([delimiter])
+
+Same as `env.prefix()`.
+
+### env.prefix([delimiter])
+
+Extracts the environment at the beginning of the function name.
+
+### env.suffix([delimiter])
+
+Extracts the environment at the end of the function name.
 
 #### delimiter
 
