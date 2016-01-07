@@ -1,7 +1,7 @@
 {
   "name": "aws-lambda-env",
   "version": "2.0.0",
-  "description": "Determines the environment the lambda function is running in.",
+  "description": "Extracts the environment of the lambda function",
   "license": "MIT",
   "author": {
     "name": "Sam Verschueren",

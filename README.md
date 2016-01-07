@@ -1,6 +1,6 @@
 # aws-lambda-env [![Build Status](https://travis-ci.org/SamVerschueren/aws-lambda-env.svg?branch=master)](https://travis-ci.org/SamVerschueren/aws-lambda-env)
 
-> Extracts the environment the lambda function is running in.
+> Extracts the environment of the lambda function.
 
 
 ## Installation
@@ -18,7 +18,8 @@ var lambdaEnv = require('aws-lambda-env');
 exports.handler = function(event, context) {
 	var env = lambdaEnv(context) || 'staging';
 
-	var config = require('./config.json')[env];
+	console.log(env);
+	//=> 'production'
 };
 ```
 
@@ -27,7 +28,7 @@ exports.handler = function(event, context) {
 
 ### lambdaEnv(context)
 
-Returns the alias of the lambda invocation or `undefined` if no alias was found.
+Returns the alias or version of the lambda invocation. Returns `undefined` if `$LATEST` is executed.
 
 #### context
 
