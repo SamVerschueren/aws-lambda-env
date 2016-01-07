@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-env",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Extracts the environment of the lambda function",
   "license": "MIT",
   "author": {
