@@ -16,17 +16,15 @@ $ npm install --save aws-lambda-env
 var lambdaEnv = require('aws-lambda-env');
 
 exports.handler = function(event, context) {
-	var env = lambdaEnv(context) || 'staging';
-
-	console.log(env);
-	//=> 'production'
+	var env = lambdaEnv(context);
+	//=> production
 };
 ```
 
 
 ## API
 
-### lambdaEnv(context)
+### lambdaEnv(context, [options])
 
 Returns the alias or version of the lambda invocation. Returns `undefined` if `$LATEST` is executed.
 
@@ -34,9 +32,16 @@ Returns the alias or version of the lambda invocation. Returns `undefined` if `$
 
 Type: `object`
 
-The context of the lambda function.
+Context of the lambda function.
+
+#### options
+
+Type: `object`  
+Default: `{$LATEST: 'staging', default: 'production'}`
+
+Maps the function version to a specific stage. If the version is not present in the map, it will pick the `default` value.
 
 
 ## License
 
-MIT © Sam Verschueren
+MIT © [Sam Verschueren](https://github.com/SamVerschueren)
