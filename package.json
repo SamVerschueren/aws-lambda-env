@@ -3,17 +3,14 @@
   "version": "3.0.0",
   "description": "Extracts the environment of the lambda function",
   "license": "MIT",
+  "repository": "SamVerschueren/bragg-env",
   "author": {
     "name": "Sam Verschueren",
-    "email": "sam.verschueren@gmail.com"
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
   },
-  "bugs": {
-    "url": "https://github.com/SamVerschueren/aws-lambda-env/issues"
-  },
-  "homepage": "https://github.com/SamVerschueren/aws-lambda-env#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SamVerschueren/aws-lambda-env.git"
+  "engines": {
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
