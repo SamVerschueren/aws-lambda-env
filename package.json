@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-env",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Extracts the environment of the lambda function",
   "license": "MIT",
   "repository": "SamVerschueren/bragg-env",
