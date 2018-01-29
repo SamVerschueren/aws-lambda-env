@@ -27,9 +27,6 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "object-assign": "^4.0.1"
-  },
   "devDependencies": {
     "ava": "*",
     "xo": "*"

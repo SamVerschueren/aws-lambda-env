@@ -13,7 +13,7 @@ test('result', t => {
 	t.is(fn(latest), 'staging');
 	t.is(fn(latest, {$LATEST: 'latest'}), 'latest');
 	t.is(fn(latest, {$LATEST: undefined}), 'production');
-	t.notOk(fn(latest, {$LATEST: undefined, default: undefined}));
+	t.falsy(fn(latest, {$LATEST: undefined, default: undefined}));
 	t.is(fn(v1), 'production');
 	t.is(fn(v1, {default: undefined}), '1');
 	t.is(fn(v1, {1: 'development'}), 'development');

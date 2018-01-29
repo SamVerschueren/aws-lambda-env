@@ -1,11 +1,10 @@
 'use strict';
-var objectAssign = require('object-assign');
-module.exports = function (ctx, opts) {
+module.exports = (ctx, opts) => {
 	if (!ctx || !ctx.invokedFunctionArn) {
 		throw new TypeError('Provide a context object');
 	}
 
-	opts = objectAssign({
+	opts = Object.assign({
 		$LATEST: 'staging',
 		default: 'production'
 	}, opts);
@@ -14,7 +13,7 @@ module.exports = function (ctx, opts) {
 		return opts.$LATEST || opts.default;
 	}
 
-	var version = ctx.invokedFunctionArn.split(':').pop();
+	const version = ctx.invokedFunctionArn.split(':').pop();
 
 	return opts[version] || opts.default || version;
 };
