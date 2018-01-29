@@ -5,7 +5,7 @@ module.exports = (ctx, opts) => {
 	}
 
 	opts = Object.assign({
-		$LATEST: 'staging',
+		$LATEST: 'development',
 		default: 'production'
 	}, opts);
 

@@ -37,7 +37,7 @@ Context of the lambda function.
 #### options
 
 Type: `object`  
-Default: `{$LATEST: 'staging', default: 'production'}`
+Default: `{$LATEST: 'development', default: 'production'}`
 
 Maps the function version to a specific stage. If the version is not present in the map, it will pick the `default` value.
 

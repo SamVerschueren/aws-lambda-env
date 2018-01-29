@@ -10,7 +10,7 @@ test('error', t => {
 });
 
 test('result', t => {
-	t.is(fn(latest), 'staging');
+	t.is(fn(latest), 'development');
 	t.is(fn(latest, {$LATEST: 'latest'}), 'latest');
 	t.is(fn(latest, {$LATEST: undefined}), 'production');
 	t.falsy(fn(latest, {$LATEST: undefined, default: undefined}));
